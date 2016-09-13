@@ -1,0 +1,304 @@
+/* Author: Timothy Dell */
+
+/*-------------
+CONTENTS
+
+1.0 General 
+2.0 Navigation
+3.0 Header
+4.0 Section - About
+5.0 Section - Work
+6.0 Section - View Resume
+7.0 Footer
+8.0 Contact - getInTouch
+
+---------------*/
+
+
+/* ----------------
+1.0 General styles
+-------------------*/
+
+body {
+    margin: 0 0 50px;
+
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+p {
+    font-size: 14pt;
+    font-family: 'Sans Serif','Arial','Helvetica','monospace';
+    color: #000;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 18pt;
+    font-family: 'Verdana','Sans Serif','Arial','monospace';
+    color: #000;
+}
+
+h2 {
+    font-size: 16pt;
+    font-family: 'Verdana','Sans Serif','Arial','monospace';
+    color: #000;
+}
+
+a {
+    color: #3765a3;
+}
+
+Section {
+    text-align: center;
+    margin: 0;
+    padding: 1em 4em;
+}
+
+/*-------------------
+2.0 Navigation
+--------------------*/
+nav {
+    background-color: #000000;
+    margin: 0; /*reset any inherited margin*/
+}
+
+nav ul {
+    display: inline-block;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+}
+
+nav ul li a {
+    padding: 15px 20px;
+    display: block;
+    font-family: 'Sans Serif','Arial','Helvetica','monospace';
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ebe8e3;
+    padding: 15px 20px;
+    display: block;
+    font-family: 'Sans Serif','Arial','Helvetica','monospace';
+    text-decoration: none;
+}
+
+
+#activeMenu {
+    background-color: #ebe8e3;
+    padding: 15px 20px;
+    display: block;
+    font-family: 'Sans Serif','Arial','Helvetica','monospace';
+    text-decoration: none;
+    color: #3765a3;
+    cursor: not-allowed;
+}
+
+#menuItems {
+    display: inline-block;
+}
+
+#socialItems {
+    float: right;
+    padding: 4px 10px;
+}
+
+nav img {
+    width: 35px;
+    height: 35px;
+}
+/*-------------------
+3.0 Header
+--------------------*/
+
+header {
+    background-image: url("../imgs/header5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    position: relative; /*This is to center header img horiz/vert */
+}
+
+header img {
+    position: absolute; /*This is to center header img horiz/vert */
+    margin: auto; /*This is to center header img horiz/vert */
+    display: block; /*This is to center header img horiz/vert */
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+
+}
+
+
+/*-------------------
+4.0 Section - About
+--------------------*/
+
+#aboutSection {
+    background-color: #ebe8e3;
+
+}
+
+/*-------------------
+5.0 Section - Work
+--------------------*/
+
+.workItems {
+    background-color: rgba(0,0,0,0.6);
+    display: inline-block;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+#workSection {
+    background-image: url("../imgs/header5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    position: relative; /*This is to center header img horiz/vert */
+}
+
+#workSection h1 {
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(0,0,0,0.6);
+    margin: 0;
+
+
+}
+
+
+.workItem {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.workItem img {
+    width: 250px;
+    height: 167px;
+    border-radius: 5px;
+}
+
+.workItem p {
+    background-color: rgba(255,255,255,0.8);
+    margin: 1em;
+}
+
+
+/*-------------------
+6.0 Section - View Resume
+--------------------*/
+
+#resumeSection {
+    background-color: #ebe8e3;
+}
+
+#resumeButton {
+    background-color: #ffffff;
+    border: 4px solid black;
+    display: inline-block;
+    padding: 0 1em 0 1em;
+}
+
+/*-------------------
+7.0 Footer
+--------------------*/
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    margin-top: .5em;
+}
+
+/*-------------------
+8.0 getInTouch
+--------------------*/
+
+#getInTouch {
+    background-color: #ebe8e3;
+
+}
+
+#contact input,textarea {
+    font-size: 14pt;
+    font-family: 'Sans Serif','Arial','Helvetica','monospace';
+    color: #000; 
+    line-height: 1.5;
+}
+
+#message {
+    height: 100px;
+}
+
+input[type=text],[type=email] {
+    width: 60%;
+    margin: 5px;
+    border: 2px solid grey;
+    padding: 10px;
+}
+
+textarea {
+    width: 60%;
+    height: 150px;
+    margin: 5px;
+    border: 2px solid grey;
+    padding: 10px;
+}
+
+input[type=submit] {
+    color: gray;
+    background-color: #ebe8e3;
+    border: 2px solid grey;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+input[type=submit]:hover {
+    color: gray;
+    background-color: #ffffff;
+    border: 2px solid grey;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+form label {
+    display: none;
+}
